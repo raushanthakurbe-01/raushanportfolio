@@ -203,11 +203,12 @@ if (contactForm) {
 
             emailjs.init({ publicKey: emailJSConfig.publicKey });
 
+            const formData = new FormData(contactForm);
             const templateParams = {
-                name: contactForm.name.value,
-                email: contactForm.email.value,
-                subject: contactForm.subject.value,
-                message: contactForm.message.value
+                name: formData.get("name"),
+                email: formData.get("email"),
+                subject: formData.get("subject"),
+                message: formData.get("message")
             };
 
             await emailjs.send(emailJSConfig.serviceId, emailJSConfig.templateId, templateParams);
@@ -215,7 +216,8 @@ if (contactForm) {
             showFormStatus("Your details have been sent successfully. I will contact you soon.", "success");
             contactForm.reset();
         } catch (error) {
-            showFormStatus("EmailJS is not configured yet. Add your EmailJS keys in raushan.js to enable email delivery.", "error");
+            const errorMessage = error?.text || error?.message || "Unable to send your message. Please try again later.";
+            showFormStatus(errorMessage, "error");
         } finally {
             submitButton.disabled = false;
             submitButton.innerHTML = originalText;
@@ -366,8 +368,4 @@ document.addEventListener("keydown", (event) => {
 // ================================
 
 document.getElementById("year").textContent =
-    new Date().getFullYear();    const emailJSConfig = {
-        publicKey: "YOUR_PUBLIC_KEY",
-        serviceId: "YOUR_SERVICE_ID",
-        templateId: "YOUR_TEMPLATE_ID"
-    };
+    new Date().getFullYear();
