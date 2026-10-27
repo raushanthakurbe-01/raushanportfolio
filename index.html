@@ -60,6 +60,7 @@
 
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -97,8 +98,8 @@
             Raushan <span>Kumar</span>
         </h1>
 
-        <h2>
-            Full Stack Web Developer
+        <h2 class="dynamic-title-container" aria-label="Role: Full Stack Web Developer">
+            <span class="dynamic-title" id="dynamicTitle">Full Stack Web Developer</span>
         </h2>
 
         <p class="home-description">
@@ -118,9 +119,28 @@
                 Contact Me
             </a>
 
+            <a href="Raushan_Kumar_Resume.pdf" class="btn btn-resume" id="downloadCvBtn" download="Raushan_Kumar_Resume.pdf">
+                <i class="fas fa-file-arrow-down"></i>
+                Download CV
+            </a>
+
         </div>
 
         <div class="social-links">
+
+            <a href="https://www.instagram.com/raushann_10?srtk=cHNjYnY3djRpaGY%3D&utm_source=qr"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/919905552535?text=Hi%20Raushan%2C%20I%20saw%20your%20portfolio!"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
 
             <a href="https://www.linkedin.com/in/raushan-kumar-5b362a270/"
                target="_blank"
@@ -238,6 +258,74 @@
                 Let's Talk
             </a>
 
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services section" id="services">
+
+    <div class="section-title">
+        <p>What I Offer</p>
+        <h2>My <span>Services</span></h2>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Full Stack Web Apps</h3>
+            <p>End-to-end web applications with modern frontend (React) and resilient backend (Java, Spring Boot, Node.js).</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check"></i> Responsive UI/UX Design</li>
+                <li><i class="fas fa-check"></i> Secure JWT Authentication</li>
+                <li><i class="fas fa-check"></i> Scalable Architecture</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <h3>Backend & REST APIs</h3>
+            <p>High-performance server architecture, robust RESTful APIs, microservices, and seamless third-party integrations.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check"></i> Spring Boot & Express</li>
+                <li><i class="fas fa-check"></i> API Rate Limiting & Auth</li>
+                <li><i class="fas fa-check"></i> Optimized Response Times</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <h3>Database & Architecture</h3>
+            <p>Relational & document database modeling, advanced query optimization, indexing, and scalable cloud deployments.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check"></i> MySQL & MongoDB</li>
+                <li><i class="fas fa-check"></i> Schema Normalization</li>
+                <li><i class="fas fa-check"></i> Data Security & Integrity</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI/ML Integration</h3>
+            <p>Smart automation, predictive machine learning models in Python, prompt engineering, and intelligent AI features.</p>
+            <ul class="service-features">
+                <li><i class="fas fa-check"></i> Python & Scikit-Learn</li>
+                <li><i class="fas fa-check"></i> Generative AI & Prompts</li>
+                <li><i class="fas fa-check"></i> Data Analytics & Insights</li>
+            </ul>
         </div>
 
     </div>
@@ -494,10 +582,7 @@
                         Live Demo
                     </a>
 
-                    <a href="#" target="_blank">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
+                    <a href="https://github.com/raushanthakurbe-01" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
 
                 </div>
 
@@ -538,7 +623,44 @@
                         Live Demo
                     </a>
 
-                    <a href="#">
+                    <a href="https://github.com/raushanthakurbe-01" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Project 4 -->
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+
+            <div class="project-content">
+
+                <h3>AI & Customer Analytics</h3>
+
+                <p>
+                    Intelligent data analytics dashboard utilizing NLP, Python,
+                    and machine learning models for customer feedback and sentiment insights.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Pandas</span>
+                    <span>NLP</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/raushanthakurbe-01" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                         GitHub
                     </a>
@@ -576,13 +698,52 @@
 
                 <div class="project-links">
 
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                        GitHub
-                    </a>
+                    <a href="https://github.com/raushanthakurbe-01" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
 
                 </div>
 
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="github-stats-container">
+
+        <div class="github-card">
+
+            <div class="github-card-header">
+                <i class="fab fa-github"></i>
+                <div>
+                    <h4>Raushan Kumar on GitHub</h4>
+                    <a href="https://github.com/raushanthakurbe-01" target="_blank" rel="noopener noreferrer">@raushanthakurbe-01 · View Profile</a>
+                </div>
+            </div>
+
+            <div class="github-stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">Full Stack</span>
+                    <span class="stat-label">Development</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">Java & React</span>
+                    <span class="stat-label">Core Specialization</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">Python & ML</span>
+                    <span class="stat-label">AI & Data Analytics</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">Active</span>
+                    <span class="stat-label">Open Source Coder</span>
+                </div>
+            </div>
+
+            <div class="github-card-footer">
+                <a href="https://github.com/raushanthakurbe-01?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                    <i class="fas fa-code-branch"></i> Explore Repositories
+                </a>
             </div>
 
         </div>
@@ -815,6 +976,11 @@
 
             </div>
 
+            <div class="contact-social-actions" id="contactSocialActions" aria-label="Additional contact options">
+                <a id="contactWhatsApp" href="https://wa.me/919905552535?text=Hi%20Raushan%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp <span>Direct message</span></a>
+                <a id="contactInstagram" href="https://www.instagram.com/raushann_10?srtk=cHNjYnY3djRpaGY%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram profile</a>
+            </div>
+
         </div>
 
 
@@ -895,6 +1061,20 @@
 
         <div class="footer-social">
 
+            <a href="https://wa.me/919905552535?text=Hi%20Raushan%2C%20I%20saw%20your%20portfolio!"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.instagram.com/raushann_10?srtk=cHNjYnY3djRpaGY%3D&utm_source=qr"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
             <a href="https://www.linkedin.com/in/raushan-kumar-5b362a270/"
                target="_blank"
                rel="noopener noreferrer">
@@ -939,6 +1119,79 @@
     <i class="fas fa-arrow-up"></i>
 
 </button>
+
+
+<div class="contact-widget" id="contactWidget">
+    <div class="contact-menu" id="contactMenu" aria-hidden="true">
+        <button class="contact-menu-action" id="openChatAction" type="button" aria-label="Open AI chat">
+            <i class="fas fa-comments" aria-hidden="true"></i><span>AI Chat</span>
+        </button>
+        <a class="contact-menu-action" id="whatsappAction" href="https://wa.me/919905552535?text=Hi%20Raushan%2C%20I%20saw%20your%20portfolio!" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span>
+        </a>
+        <a class="contact-menu-action" id="instagramAction" href="https://www.instagram.com/raushann_10?srtk=cHNjYnY3djRpaGY%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
+            <i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span>
+        </a>
+    </div>
+
+    <section class="portfolio-chat" id="portfolioChat" role="dialog" aria-labelledby="chatTitle" aria-modal="false" aria-hidden="true" inert>
+        <header class="chat-header">
+            <div class="chat-heading">
+                <span class="chat-avatar" aria-hidden="true"><i class="fas fa-sparkles"></i></span>
+                <div>
+                    <h2 id="chatTitle">Raushan’s AI Assistant</h2>
+                    <p><span class="chat-status-dot" aria-hidden="true"></span><span id="chatStatus">Checking assistant setup</span></p>
+                </div>
+            </div>
+            <div class="chat-header-actions">
+                <button class="chat-icon-button" id="newConversation" type="button" aria-label="Start a new conversation" title="New conversation"><i class="fas fa-rotate-right" aria-hidden="true"></i></button>
+                <button class="chat-icon-button" id="closeChat" type="button" aria-label="Minimize chat" title="Minimize"><i class="fas fa-minus" aria-hidden="true"></i></button>
+            </div>
+        </header>
+
+        <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-relevant="additions text">
+            <div class="chat-message assistant-message">
+                <p>Hi! I can help you explore Raushan’s portfolio. Ask a question or choose a topic below.</p>
+                <time></time>
+            </div>
+        </div>
+
+        <div class="chat-suggestions" id="chatSuggestions" aria-label="Suggested questions">
+            <button type="button">Tell me about Raushan.</button>
+            <button type="button">What are his technical skills?</button>
+            <button type="button">Show me his projects.</button>
+            <button type="button">What is his education?</button>
+            <button type="button">How can I contact him?</button>
+        </div>
+
+        <nav class="chat-shortcuts" aria-label="Portfolio shortcuts">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#certification">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <form class="chat-compose" id="chatForm">
+            <label class="visually-hidden" for="chatInput">Message the portfolio assistant</label>
+            <input id="chatInput" name="message" type="text" maxlength="800" autocomplete="off" placeholder="Ask about the portfolio…">
+            <button id="sendChat" type="submit" aria-label="Send message"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+        </form>
+        <p class="chat-disclaimer" id="chatDisclaimer">Answers are based on information shown in this portfolio.</p>
+    </section>
+
+    <div class="chat-launcher-badge" id="chatLauncherBadge" role="button" tabindex="0" aria-label="Chat with Raushan's AI">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span>Ask Raushan's AI</span>
+        <i class="fas fa-sparkles" aria-hidden="true"></i>
+    </div>
+
+    <button class="contact-launcher" id="contactLauncher" type="button" aria-label="Open AI Assistant" aria-expanded="false" aria-controls="contactMenu">
+        <i class="fas fa-comment-dots launcher-icon-chat" aria-hidden="true"></i>
+        <i class="fas fa-xmark launcher-icon-close" aria-hidden="true" style="display: none;"></i>
+    </button>
+</div>
 
 
 <script src="raushan.js"></script>
